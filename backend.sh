@@ -1,4 +1,5 @@
 #!/bin/bash
+source ./common.sh
 read  -s -p "enter db password:" DB_PASSWORD 
 check_root
 
