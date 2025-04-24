@@ -1,7 +1,8 @@
 #!/bin/bash
+source ./common.sh
+check_root
 
 read  -s -p "enter db password:" DB_PASSWORD 
-check_root
 
 dnf install mysql-server -y &>>$LOGFILE
 validate $? "installing mysql"

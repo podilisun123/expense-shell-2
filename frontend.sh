@@ -1,6 +1,7 @@
 #!/bin/bash
 source ./common.sh
 check_root
+
 dnf install nginx -y &>>$LOGFILE
 validate $? "installing nginx"
 systemctl enable nginx &>>$LOGFILE
